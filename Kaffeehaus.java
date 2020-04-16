@@ -11,8 +11,8 @@ import processing.core.PFont;
  */
 public class Kaffeehaus extends PApplet
 {  
-    int s= 40;
-    int [] abstaende = {10, 20, 30, 20, 10, 20, 30, 20, 10};
+    int s= 40;//seitenlänge der Quadrate
+    int [] abstaende = {10, 20, 30, 20, 10, 20, 30, 20, 10};// verschiebung der Quadrate
     /**
      * settings() Methode 
      * Fenstergröße size(int width, int height) und smooth(int level) muss hier eingestellt werden.
@@ -20,9 +20,10 @@ public class Kaffeehaus extends PApplet
     @Override
     public void settings()
     {
-        size(640,400);
+        size(640,400);//größe des Fensters
 
     }        
+
     //Methode für 10 graue Parallelen
     public void parallelen () {
         stroke (125); //Farbe grau
@@ -31,6 +32,7 @@ public class Kaffeehaus extends PApplet
         }
     }
 
+    //Quadrate der ersten Reihe
     public void zeichneQuadrate () {
         fill(0); //schwarz
         for (int j=0; j<=7;j++) {
@@ -38,6 +40,7 @@ public class Kaffeehaus extends PApplet
         }
     }
 
+    //alle Quadrate
     public void zeichneAlleQuadrate () {
         fill (0);
         for (int k=0; k<=8;k++) {
@@ -57,7 +60,7 @@ public class Kaffeehaus extends PApplet
     {
         background (255); //hintergrundfarbe weiss
         parallelen (); //Parallelen werden gezeichnet
-        zeichneAlleQuadrate();
+        zeichneAlleQuadrate(); //alle quadrate werden gezeichnet
     }
 
     /**
