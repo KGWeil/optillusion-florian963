@@ -17,7 +17,8 @@ public class WasZeichneIch extends PApplet
     @Override
     public void settings()
     {
-        size(600,400);
+        size(500,500);
+       
     }        
 
     // Überlege dir, was die Anweisungen in der Methode "wasZeichneIch" auslösen könnten
@@ -37,6 +38,9 @@ public class WasZeichneIch extends PApplet
     public void setup()
     {
         wasZeichneIch();
+        rect(50, 50, 100, 75);
+        line(0, 0, 500, 500);
+        ellipse(250, 250, 500, 250);
     }
 
     /**

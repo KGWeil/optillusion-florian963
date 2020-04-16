@@ -26,13 +26,23 @@ public class Figuren extends PApplet
         // dass Bild C gezeichnet wird
 
         // ***** hier kommen deine Anweisungen hin ************
-
+        square(10, 10, 100);
+        circle(60, 60, 80);
+        circle(60, 60, 60);
+        circle(60, 60, 40);
+        circle(60, 170, 100);
+        square(30, 140, 60);
+        square(40, 150, 40);
+        square(50, 160, 20);
         // ***** Ende der eigenen Anweisungen **********
     }
 
     //***** Zusatzaufgabe bzw. Hausaufgabe *************
     public void zeichneBildA() {
         // ***** hier kommen deine Anweisungen hin ************
+        circle(60, 60, 100);
+        square(10, 110, 100);
+        triangle(60, 210, 110, 310, 10, 310);
 
         // ***** Ende der eigenen Anweisungen **********  
     }
@@ -45,8 +55,10 @@ public class Figuren extends PApplet
     @Override
     public void setup()
     {
-        zeichneBildC(); // Aufruf deiner Methode
+
+        // Aufruf deiner Methode
         // zeichneBildA();
+        zeichneBildA();
     }
 
     /**
